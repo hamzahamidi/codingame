@@ -1,1 +1,1 @@
-# codingame
+# Project emagnidoc
