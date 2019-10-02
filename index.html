@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .parent {
+        display: flex;
+      }
+      .d1 {
+        flex: 1;
+      }
+      .d2 {
+        flex: 1;
+      }
+      .d3 {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="d1">llllllllllllll</div>
+      <div class="d2">llllllllllllll</div>
+      <div class="d3">llllllllllllll</div>
+    </div>
+    <div>
+      <ul>
+        <li>ooo</li>
+        <li>bbb</li>
+        <li>ccc</li>
+      </ul>
+    </div>
+    <script>
+      var list = document.getElementsByTagName("li");
+      debugger;
+      console.log("list", list);
+      for (let i = 0; i < list.length; i++) {
+        const element = list[i];
+        element.onclick = function() {
+          console.log("i", i);
+          console.log("list", list);
+        };
+      }
+    </script>
+  </body>
+</html>
